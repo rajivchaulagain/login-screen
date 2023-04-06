@@ -80,10 +80,6 @@ input {
   text-align: center;
 }
 
-.form__input-wrapper {
-  margin: 2rem 0;
-}
-
 .forget-password {
   text-align: right;
 }
@@ -98,6 +94,14 @@ input {
   color: var(--violet);
 }
 
+.form__control {
+  margin-block: 2rem;
+}
+
+.form__input-wrapper {
+  position: relative;
+}
+
 .form__label {
   font-size: 14px;
   color: #333;
@@ -108,16 +112,25 @@ input {
   width: 100%;
   border: 0;
   border-bottom: 2px solid #ccc;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.form__input-icon {
+  font-size: 1.125rem;
+  position: absolute;
+  left: 0.25%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__input:focus {
+  border-bottom: 2px solid var(--black);
+  outline: 0;
 }
 
 .form__login-btn {
-  background-image: linear-gradient(
-    to right,
-    #00dbde,
-    #fc00ff,
-    #8c0b8d
-  );
+  background-image: linear-gradient(to right, #00dbde, #fc00ff, #8c0b8d);
   position: relative;
   width: 100%;
   color: var(--white);
@@ -137,12 +150,7 @@ input {
   position: absolute;
   content: "";
   inset: 0;
-  background-image: linear-gradient(
-    to right,
-    #8c0b8d,
-    #fc00ff,
-    #00dbde
-  );
+  background-image: linear-gradient(to right, #8c0b8d, #fc00ff, #00dbde);
   opacity: 0;
   transition: all 0.3s linear;
 }
@@ -173,7 +181,6 @@ input {
 
 .form__social-icon[name="logo-facebook"] {
   background: var(--dark-blue);
-
 }
 
 .form__social-icon[name="logo-twitter"] {
@@ -203,5 +210,3 @@ input {
 .form__signup-btn:hover {
   color: var(--violet);
 }
-
-
