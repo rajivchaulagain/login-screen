@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 :root {
   /* Typography */
@@ -52,7 +52,7 @@ input {
   font: inherit;
 }
 
-
+/* Adding a random comment */
 /* Login Screen Styling */
 
 .login {
@@ -78,15 +78,15 @@ input {
   margin: 2rem 0;
 }
 
-.forget-password{
+.forget-password {
   text-align: right;
 }
 
-.forget-password a{
+.forget-password a {
   color: var(--dark-grey);
   text-decoration: none;
 }
-.forget-password a:hover{
+.forget-password a:hover {
   color: var(--violet);
 }
 
@@ -103,8 +103,14 @@ input {
   padding: 1rem 0;
 }
 
-.form__btn{
-  background: -webkit-linear-gradient(right,#00dbde,#fc00ff,#00dbde,#fc00ff);
+.form__btn {
+  background: -webkit-linear-gradient(
+    right,
+    #00dbde,
+    #fc00ff,
+    #00dbde,
+    #fc00ff
+  );
   width: 100%;
   border: 0;
   color: #fff;
@@ -118,21 +124,21 @@ input {
 /* form__signup__wrapper styling */
 
 /* social media styling starts */
-.social__media__wrapper{
+.social__media__wrapper {
   margin-bottom: 7rem;
   margin-top: 3rem;
 }
 
-.form__social-links a{
+.form__social-links a {
   color: #fff;
 }
 
-.form__social-icon{
-padding: .75rem;
-border-radius: 2rem;
-border: 0;
-font-size: 1.15rem;
-margin: 1rem .25rem 0 0;
+.form__social-icon {
+  padding: 0.75rem;
+  border-radius: 2rem;
+  border: 0;
+  font-size: 1.15rem;
+  margin: 1rem 0.25rem 0 0;
 }
 
 .form__social-icon.facebook {
@@ -161,12 +167,12 @@ margin: 1rem .25rem 0 0;
   text-align: center;
   font-size: 0.85rem;
 }
- 
-.form__signup__wrapper p{
+
+.form__signup__wrapper p {
   color: var(--dark-grey);
 }
 
-.form__signup__wrapper .form__signup__button{
+.form__signup__wrapper .form__signup__button {
   border: 0;
   background-color: transparent;
   margin-top: 1.25rem;
