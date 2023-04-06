@@ -1,3 +1,17 @@
+:root {
+  /* Typography */
+  --font-poppins: "Poppins", sans-serif;
+
+  /* Colors */
+  --violet: #a64bf4;
+  --button-gradient: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  --black: #333;
+  --dark-grey: #666;
+  --grey: #adadad;
+  --white: #d9d9d9;
+}
+
+/* CSS Reset */
 *,
 *::before,
 *::after {
@@ -25,20 +39,11 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/background.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
