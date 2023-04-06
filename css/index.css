@@ -8,7 +8,7 @@
   --black: #333;
   --dark-grey: #666;
   --grey: #adadad;
-  --white: #d9d9d9;
+  --white: #fff;
 }
 
 /* CSS Reset */
@@ -46,4 +46,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+/* Login Screen Styling */
+.login {
+  background-color: var(--white);
+  padding: 3rem;
 }
