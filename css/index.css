@@ -3,7 +3,7 @@
   --font-poppins: "Poppins", sans-serif;
 
   /* Font Sizes */
-  --font-size-400: 2rem;
+  --font-size-400: 2.25rem;
   --font-size-300: 1rem;
   --font-size-200: 0.9375rem;
   --font-size-100: 0.875rem;
@@ -79,9 +79,14 @@ input {
 }
 
 /* Login Screen Styling */
+.login-section {
+  padding-inline: 0.75rem;
+}
+
 .login {
   max-width: 32rem;
-  padding: clamp(1.25rem, 0.5rem + 5vw, 3rem);
+  padding-block: clamp(1.75rem, 0.5rem + 5vw, 3rem);
+  padding-inline: clamp(0.75rem, 0.5rem + 4vw, 2.75rem);
   background-color: var(--white);
   border-radius: 0.75rem;
   margin-block: 1rem;
@@ -179,7 +184,7 @@ input {
 
 /* Sign up wrapper= Styling */
 .social__media__wrapper {
-  margin-bottom: 6rem;
+  margin-bottom: clamp(3rem, 0.5rem + 10vw, 6rem);
   margin-top: 3rem;
 }
 

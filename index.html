@@ -24,85 +24,87 @@
   </head>
   <body>
     <main>
-      <div class="login">
-        <form class="form">
-          <h1 class="form__heading">Login</h1>
-          <div class="form__control">
-            <label class="form__label" for="form__input--username"
-              >Username</label
-            >
-            <div class="form__input-wrapper">
-              <span>
-                <ion-icon
-                  class="form__input-icon"
-                  name="person-outline"
-                ></ion-icon>
-              </span>
-              <input
-                type="text"
-                class="form__input"
-                id="form__input--username"
-                placeholder="Type your username"
-              />
-            </div>
-          </div>
-          <div class="form__control">
-            <label class="form__label" for="form__input--password"
-              >Password</label
-            >
-            <div class="form__input-wrapper">
-              <ion-icon
-                class="form__input-icon"
-                name="lock-closed-outline"
-              ></ion-icon>
-              <input
-                type="password"
-                class="form__input"
-                id="form__input--password"
-                placeholder="Type your password"
-              />
-            </div>
-            <div class="form__forgot-password-wrapper">
-              <a class="form__forgot-password-link" href="#"
-                >Forget Password?</a
+      <section class="login-section">
+        <div class="login">
+          <form class="form">
+            <h1 class="form__heading">Login</h1>
+            <div class="form__control">
+              <label class="form__label" for="form__input--username"
+                >Username</label
               >
-            </div>
-          </div>
-
-          <button class="btn form__login-btn" type="submit">
-            <span class="form__login-btn-text">Login</span>
-          </button>
-
-          <div class="form__signup__wrapper">
-            <div class="social__media__wrapper">
-              <p>Or Sign up Using</p>
-              <div class="form__social-links">
-                <a href="#" class="form__social-link">
+              <div class="form__input-wrapper">
+                <span>
                   <ion-icon
-                    class="form__social-icon"
-                    name="logo-facebook"
+                    class="form__input-icon"
+                    name="person-outline"
                   ></ion-icon>
-                </a>
-                <a href="#" class="form__social-link">
-                  <ion-icon
-                    class="form__social-icon"
-                    name="logo-twitter"
-                  ></ion-icon>
-                </a>
-                <a href="#" class="form__social-link">
-                  <ion-icon
-                    class="form__social-icon"
-                    name="logo-google"
-                  ></ion-icon>
-                </a>
+                </span>
+                <input
+                  type="text"
+                  class="form__input"
+                  id="form__input--username"
+                  placeholder="Type your username"
+                />
               </div>
             </div>
-            <!-- sign up button -->
-            <p>Or Sign up Using</p>
-            <button class="btn form__signup-btn">Sign up</button>
-          </div>
-        </form>
-      </div>
+            <div class="form__control">
+              <label class="form__label" for="form__input--password"
+                >Password</label
+              >
+              <div class="form__input-wrapper">
+                <ion-icon
+                  class="form__input-icon"
+                  name="lock-closed-outline"
+                ></ion-icon>
+                <input
+                  type="password"
+                  class="form__input"
+                  id="form__input--password"
+                  placeholder="Type your password"
+                />
+              </div>
+              <div class="form__forgot-password-wrapper">
+                <a class="form__forgot-password-link" href="#"
+                  >Forget Password?</a
+                >
+              </div>
+            </div>
+
+            <button class="btn form__login-btn" type="submit">
+              <span class="form__login-btn-text">Login</span>
+            </button>
+
+            <div class="form__signup__wrapper">
+              <div class="social__media__wrapper">
+                <p>Or Sign up Using</p>
+                <div class="form__social-links">
+                  <a href="#" class="form__social-link">
+                    <ion-icon
+                      class="form__social-icon"
+                      name="logo-facebook"
+                    ></ion-icon>
+                  </a>
+                  <a href="#" class="form__social-link">
+                    <ion-icon
+                      class="form__social-icon"
+                      name="logo-twitter"
+                    ></ion-icon>
+                  </a>
+                  <a href="#" class="form__social-link">
+                    <ion-icon
+                      class="form__social-icon"
+                      name="logo-google"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <!-- sign up button -->
+              <p>Or Sign up Using</p>
+              <button class="btn form__signup-btn">Sign up</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
