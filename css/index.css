@@ -82,6 +82,7 @@ input {
 
 .forget-password {
   text-align: right;
+  margin-top: 1rem;
 }
 
 .forget-password a {
@@ -111,6 +112,7 @@ input {
 .form__input {
   width: 100%;
   border: 0;
+  font-weight : 500;
   border-bottom: 2px solid #ccc;
   padding: 1rem 2rem;
   transition: all 0.3s ease;
