@@ -102,14 +102,14 @@ input {
   padding: 1rem 0;
 }
 
-.form__btn {
-  background: -webkit-linear-gradient(
-    right,
+.form__login-btn {
+  background-image: linear-gradient(
+    to right,
     #00dbde,
     #fc00ff,
-    #00dbde,
-    #fc00ff
+    #8c0b8d
   );
+  position: relative;
   width: 100%;
   border: 0;
   color: #fff;
@@ -119,6 +119,30 @@ input {
   text-transform: uppercase;
   font-size: 1rem;
   cursor: pointer;
+  overflow: hidden;
+}
+
+.form__login-btn-text {
+  position: relative;
+  z-index: 999;
+}
+
+.form__login-btn::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: linear-gradient(
+    to right,
+    #8c0b8d,
+    #fc00ff,
+    #00dbde
+  );
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.form__login-btn:hover::before {
+  opacity: 1;
 }
 
 /* form__signup__wrapper styling */
@@ -137,31 +161,24 @@ input {
   padding: 0.75rem;
   border-radius: 2rem;
   border: 0;
-  font-size: 1.15rem;
+  font-size: 1.375rem;
   margin: 1rem 0.25rem 0 0;
 }
 
-.form__social-icon.facebook {
+.form__social-icon[name="logo-facebook"] {
   background: hsl(221, 44%, 41%);
-  color: hsl(0, 0%, 100%);
+
 }
 
-.form__social-icon.twitter {
+.form__social-icon[name="logo-twitter"] {
   background: hsl(203, 89%, 43%);
-  color: hsl(0, 0%, 100%);
 }
 
-.form__social-icon.linkedin {
-  background: hsl(201, 100%, 35%);
-  color: hsl(0, 0%, 100%);
-}
-
-.form__social-icon.google {
+.form__social-icon[name="logo-google"] {
   background-color: hsla(0, 67%, 56%, 0.822);
-  color: hsl(0, 0%, 100%);
 }
 
-/* social media styling ends */
+/* Social media styling ends */
 
 .form__signup__wrapper {
   text-align: center;
@@ -172,9 +189,17 @@ input {
   color: var(--dark-grey);
 }
 
-.form__signup__wrapper .form__signup__button {
+.form__signup-btn {
   border: 0;
   background-color: transparent;
   margin-top: 1.25rem;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
+
+.form__signup-btn:hover {
+  color: var(--violet);
+}
+
+
