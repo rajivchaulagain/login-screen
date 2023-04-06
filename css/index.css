@@ -52,9 +52,7 @@ input {
   font: inherit;
 }
 
-/* Adding a random comment */
 /* Login Screen Styling */
-
 .login {
   background-color: var(--white);
   padding: 3rem;
@@ -64,10 +62,9 @@ input {
 }
 
 /* Form Screen Styling */
-
 .form__heading {
   display: block;
-  font-family: Poppins-Bold;
+  font-weight: 700;
   font-size: 39px;
   color: #333;
   line-height: 1.2;
@@ -85,12 +82,14 @@ input {
 .forget-password a {
   color: var(--dark-grey);
   text-decoration: none;
+  transition: all 0.3s ease;
 }
+
 .forget-password a:hover {
   color: var(--violet);
 }
 
-.form__input-wrapper label {
+.form__label {
   font-size: 14px;
   color: #333;
   line-height: 1.5;
@@ -119,6 +118,7 @@ input {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 /* form__signup__wrapper styling */
