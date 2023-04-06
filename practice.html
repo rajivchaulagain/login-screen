@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <title>Practice Website</title>
+  <style>
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-content: center;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      padding: 0.25rem;
+    }
+
+    a {
+      color: white;
+    }
+
+    .logo {
+      border-radius: 50%;
+      padding: 0.5rem;
+    }
+
+    .logo[name="logo-facebook"] {
+      background-color: hsl(221, 44%, 41%);
+    }
+
+    .logo[name="logo-twitter"] {
+      background-color:hsl(203, 89%, 43%)
+    }
+
+    .logo[name="logo-google"] {
+      background-color: hsla(0, 67%, 56%, 0.822);
+    }
+
+  </style>
+</head>
+<body>
+<div>
+  <a href="#">
+    <ion-icon class="logo logo--facebook" name="logo-facebook"></ion-icon>
+  </a>
+  <a href="#">
+    <ion-icon class="logo logo--twitter" name="logo-twitter"></ion-icon>
+  </a>
+  <a href="#">
+    <ion-icon class="logo logo--google" name="logo-google"></ion-icon>
+  </a>
+</div>
+</body>
+</html>

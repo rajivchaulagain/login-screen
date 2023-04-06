@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
 :root {
   /* Typography */
   --font-poppins: "Poppins", sans-serif;
 
   /* Colors */
   --violet: #a64bf4;
-  --button-gradient: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
   --black: #333;
+  --blue: hsl(203, 89%, 43%);
+  --dark-blue: hsl(221, 44%, 41%);
+  --red: hsla(0, 67%, 56%, 0.822);
   --dark-grey: #666;
   --grey: #adadad;
   --white: #fff;
@@ -50,6 +50,15 @@ picture {
 button,
 input {
   font: inherit;
+}
+
+/* Button Utility Class*/
+.btn {
+  border: 0;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 /* Login Screen Styling */
@@ -102,23 +111,44 @@ input {
   padding: 1rem 0;
 }
 
-.form__btn {
-  background: -webkit-linear-gradient(
-    right,
+.form__login-btn {
+  background-image: linear-gradient(
+    to right,
     #00dbde,
     #fc00ff,
-    #00dbde,
-    #fc00ff
+    #8c0b8d
   );
+  position: relative;
   width: 100%;
-  border: 0;
-  color: #fff;
+  color: var(--white);
   padding: 1rem;
   border-radius: 2rem;
   font-weight: 500;
-  text-transform: uppercase;
   font-size: 1rem;
-  cursor: pointer;
+  overflow: hidden;
+}
+
+.form__login-btn-text {
+  position: relative;
+  z-index: 999;
+}
+
+.form__login-btn::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: linear-gradient(
+    to right,
+    #8c0b8d,
+    #fc00ff,
+    #00dbde
+  );
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.form__login-btn:hover::before {
+  opacity: 1;
 }
 
 /* form__signup__wrapper styling */
@@ -130,38 +160,31 @@ input {
 }
 
 .form__social-links a {
-  color: #fff;
+  color: var(--white);
 }
 
 .form__social-icon {
   padding: 0.75rem;
   border-radius: 2rem;
   border: 0;
-  font-size: 1.15rem;
+  font-size: 1.375rem;
   margin: 1rem 0.25rem 0 0;
 }
 
-.form__social-icon.facebook {
-  background: hsl(221, 44%, 41%);
-  color: hsl(0, 0%, 100%);
+.form__social-icon[name="logo-facebook"] {
+  background: var(--dark-blue);
+
 }
 
-.form__social-icon.twitter {
-  background: hsl(203, 89%, 43%);
-  color: hsl(0, 0%, 100%);
+.form__social-icon[name="logo-twitter"] {
+  background: var(--blue);
 }
 
-.form__social-icon.linkedin {
-  background: hsl(201, 100%, 35%);
-  color: hsl(0, 0%, 100%);
+.form__social-icon[name="logo-google"] {
+  background-color: var(--red);
 }
 
-.form__social-icon.google {
-  background-color: hsla(0, 67%, 56%, 0.822);
-  color: hsl(0, 0%, 100%);
-}
-
-/* social media styling ends */
+/* Social media styling ends */
 
 .form__signup__wrapper {
   text-align: center;
@@ -172,9 +195,13 @@ input {
   color: var(--dark-grey);
 }
 
-.form__signup__wrapper .form__signup__button {
-  border: 0;
+.form__signup-btn {
   background-color: transparent;
   margin-top: 1.25rem;
-  text-transform: uppercase;
 }
+
+.form__signup-btn:hover {
+  color: var(--violet);
+}
+
+
