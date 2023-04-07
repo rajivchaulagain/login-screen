@@ -1,8 +1,8 @@
 # Fancy Login Screen
 
-[//]: # (### Screenshot)
+### Screenshot
 
-[//]: # (![]&#40;screenshot/Screenshot%20.png&#41;)
+![](screenshot/Screenshot.png)
 
 ### Links
 
