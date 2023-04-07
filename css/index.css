@@ -83,13 +83,6 @@ input {
   padding-inline: 0.5rem;
 }
 
-/*@media (min-width : 768px) {*/
-/*  .login {*/
-/*    max-width: 32rem;*/
-/*    min-width: 32rem;*/
-/*  }*/
-/*}*/
-
 .login {
   width: min(calc(100vw - 1rem), 30rem);
   padding-block: clamp(1.75rem, 0.5rem + 5vw, 3rem);
