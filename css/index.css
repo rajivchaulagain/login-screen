@@ -84,12 +84,13 @@ input {
 }
 
 .login {
-  width: min(calc(100vw - 1rem), 30rem);
+  width: min(calc(100vw - 1rem), 28rem);
   padding-block: clamp(1.75rem, 0.5rem + 5vw, 3rem);
   padding-inline: clamp(0.75rem, 0.5rem + 4vw, 2.75rem);
   background-color: var(--white);
   border-radius: 0.75rem;
   margin-block: 1rem;
+  box-shadow: 3px 10px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Form Screen Styling */
@@ -120,7 +121,7 @@ input {
   font-weight: 500;
   font-size: var(--font-size-200);
   border-bottom: 2px solid #ccc;
-  padding: 1rem 2rem;
+  padding: 1rem clamp(1.75rem, 0.5rem + 4vw, 2rem);
   transition: all 0.3s ease;
 }
 
